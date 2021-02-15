@@ -16,12 +16,11 @@ public class EmployeeController {
 
     @Autowired
     private EmployeeService employeeService;
+
     @GetMapping("/")
     public String viewHomePage(Model model) {
         return findPaginated(1, "firstName", "asc", model);
     }
-
-
 
     @GetMapping("/page/{pageNo}")
     public String findPaginated(@PathVariable(value = "pageNo") int pageNo,

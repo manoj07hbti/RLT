@@ -13,6 +13,7 @@
     <artifactId>employee-management</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
     <name>springboot-thymeleaf-crud-web-app</name>
     <description>Demo project for Spring Boot and thymeleaf</description>
     <properties>

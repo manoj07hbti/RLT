@@ -24,6 +24,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     public List <Employee> getAllEmployees() {
         return employeeRepository.findAll();
     }
+
     @Override
     public Page<Employee> findPaginated(int pageNo, int pageSize) {
         Pageable pageable = PageRequest.of(pageNo - 1, pageSize);
@@ -37,6 +38,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         Pageable pageable = PageRequest.of(pageNo - 1, pageSize, sort);
         return this.employeeRepository.findAll(pageable);
+
     }
 
 }

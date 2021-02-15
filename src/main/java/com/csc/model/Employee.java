@@ -36,18 +36,21 @@ public class Employee {
     public void setId(long id) {
         this.id = id;
     }
+
     public String getFirstName() {
         return firstName;
     }
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
     public String getLastName() {
         return lastName;
     }
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
     public String getEmail() {
         return email;
     }
@@ -55,10 +58,7 @@ public class Employee {
         this.email = email;
     }
 
-    public String getAge() {
-        return age;
-    }
-
+    public String getAge() { return age; }
     public void setAge(String age) {
         this.age = age;
     }
@@ -66,7 +66,6 @@ public class Employee {
     public String getAddress() {
         return address;
     }
-
     public void setAddress(String address) {
         this.address = address;
     }
