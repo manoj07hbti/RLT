@@ -7,7 +7,8 @@ import java.util.List;
 
 
 
-public interface EmployeeService {
+public interface EmployeeService
+{
     List<Employee> getAllEmployees();
 
     Page<Employee> findPaginated(int pageNo, int pageSize);
