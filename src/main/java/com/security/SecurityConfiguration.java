@@ -32,9 +32,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication()
                 .usersByUsernameQuery("select username, password, enabled " +
-                        "from user_accounts1 where username = ?")
+                        "from user_security where username = ?")
                 .authoritiesByUsernameQuery("select username, role " +
-                        "from user_accounts1 where username = ?")
+                        "from user_security where username = ?")
                 .dataSource(dataSource)
                 .passwordEncoder(bCryptEncoder);
 
